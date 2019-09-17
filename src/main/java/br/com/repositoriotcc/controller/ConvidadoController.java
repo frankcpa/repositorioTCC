@@ -28,7 +28,7 @@ public class ConvidadoController {
         Iterable<ConvidadoModel> listaDeConvidados = service.obterTodos();
         model.addAttribute("convidados", listaDeConvidados);
 
-        return "listaConvidados";
+        return "convidados/listaConvidados";
     }
 
     @RequestMapping(value = "salvarConvidado", method = RequestMethod.POST)

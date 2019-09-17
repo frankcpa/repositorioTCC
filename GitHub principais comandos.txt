@@ -1,0 +1,22 @@
+Lista de comandos do próprio site do github:
+	https://gist.github.com/leocomelli/2545add34e4fec21ec16
+
+Para subir uma aplicação pela primeira vez:
+	git init --Inicializando um repositório Git local
+	git add . --Adicionando todos os arquivos da pasta onde se encontra a aplicação
+	git commit -m "first commit" --criando um commit para subir as alterações
+	git remote add origin https://github.com/usuario/aplicacao.git --Vinculando repositório local com um repositório remoto
+	git push -u origin master --Enviando arquivos/diretórios para o repositório remoto
+
+Verificando, Alterando ou Removendo a configuração do remoto (Origin)
+	git remote -v --para saber qual a url que está configurada
+	git remote remove origin --remove o origin
+	git remote set-url origin https://github.com/usuario/aplicacao.git --alterando o origin que estava configurado
+
+Clonando repositório
+	git clone https://github.com/usuario/aplicacao.git --clona a aplicação e cria a pasta com o mesmo nome que está no remoto
+	git clone https://github.com/usuario/aplicacao.git outroNome --clona a aplicação do remoto e altera o nome da pasta local
+
+Configurando usuário e email
+	git config --global user.name "SeuNomeDeUsuarioDoGitHub"
+	git config --global user.email SeuEmail@example.com

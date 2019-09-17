@@ -8,10 +8,10 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 
 @SpringBootApplication
-public class DemoApplication {
+public class Configuracao {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(Configuracao.class, args);
     }
 
     @Bean
