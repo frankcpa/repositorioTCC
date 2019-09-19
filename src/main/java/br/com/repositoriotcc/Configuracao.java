@@ -1,10 +1,7 @@
 package br.com.repositoriotcc;
 
-import javax.sql.DataSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 
 @SpringBootApplication
@@ -14,7 +11,7 @@ public class Configuracao {
         SpringApplication.run(Configuracao.class, args);
     }
 
-    @Bean
+    /*@Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
@@ -22,6 +19,6 @@ public class Configuracao {
         dataSource.setUsername("root");
         dataSource.setPassword("root123");
         return dataSource;
-    }
+    }*/
 
 }
